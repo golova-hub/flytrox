@@ -1,8 +1,18 @@
 
 @import 'var';
 
-h1 {
-font-family: 'Graphik LC', sans-serif;
-
+.navbar {
+  color: white;
+  font-size: 20px;
+  line-height: 1;
+  .nav-item {
+    margin-left: 64px;
+  }
+  .nav-link {
+    color: white;
+    &:hover, &:focus {
+      color: $primary;
+    }
+  }
 }
 @import '../../node_modules/bootstrap/scss/bootstrap';

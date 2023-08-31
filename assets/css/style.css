@@ -1,6 +1,17 @@
 @charset "UTF-8";
-h1, .h1 {
-  font-family: "Graphik LC", sans-serif;
+.navbar {
+  color: white;
+  font-size: 20px;
+  line-height: 1;
+}
+.navbar .nav-item {
+  margin-left: 64px;
+}
+.navbar .nav-link {
+  color: white;
+}
+.navbar .nav-link:hover, .navbar .nav-link:focus {
+  color: #FF5C00;
 }
 
 /*!
@@ -78,7 +89,7 @@ h1, .h1 {
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-  --bs-body-font-family: var(--bs-font-sans-serif);
+  --bs-body-font-family: "Graphik LC", "Graphik", sans-serif;
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
@@ -6034,7 +6045,7 @@ textarea.form-control-lg {
   z-index: var(--bs-tooltip-zindex);
   display: block;
   margin: var(--bs-tooltip-margin);
-  font-family: var(--bs-font-sans-serif);
+  font-family: "Graphik LC", "Graphik", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -6144,7 +6155,7 @@ textarea.form-control-lg {
   z-index: var(--bs-popover-zindex);
   display: block;
   max-width: var(--bs-popover-max-width);
-  font-family: var(--bs-font-sans-serif);
+  font-family: "Graphik LC", "Graphik", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
