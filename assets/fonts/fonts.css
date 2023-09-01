@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'Graphik LC';
+    font-family: 'Graphik';
     font-style: normal;
     font-weight: 400;
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
@@ -10,7 +10,7 @@
     url('Graphik-Regular-Desktop.otf') format('opentype') /* Safari, Android, iOS */
 }
 @font-face {
-    font-family: 'Graphik LC';
+    font-family: 'Graphik';
     font-style: normal;
     font-weight: 700;
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */

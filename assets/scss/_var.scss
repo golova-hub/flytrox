@@ -5,7 +5,7 @@ $dark: #1B1818;
 $light: #E8E8E8;
 
 
-$font-family-base: 'Graphik LC', 'Graphik', sans-serif;
+$font-family-base: 'Graphik', sans-serif;
 
 // spacers
 $spacer: .2rem;
@@ -30,7 +30,7 @@ $grid-breakpoints: (
         sm: 480px,
         md: 768px,
         lg: 1024px,
-        xl: 1440px,
+        xl: 1280px,
         xxl: 1728px
 );
 
@@ -38,6 +38,10 @@ $container-max-widths: (
         sm: 420px,
         md: 720px,
         lg: 960px,
-        xl: 1400px,
+        xl: 1380px,
         xxl: 1668px
 );
+
+$card-border-radius: 1rem;
+$card-spacer-y: 2.5rem;
+$card-spacer-x: 2.5rem;

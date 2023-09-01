@@ -1,6 +1,6 @@
 
 @import 'var';
-
+// header
 .navbar {
   color: white;
   font-size: 20px;
@@ -13,6 +13,28 @@
     &:hover, &:focus {
       color: $primary;
     }
+  }
+}
+// hero block
+.card {
+  //border-radius: 1rem;
+}
+.hero-block {
+  position: relative;
+  overflow: hidden;
+  .hero-hdr {
+    font-size: 84px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1;
+    text-transform: uppercase;
+    max-width: 60vw;
+  }
+  .hero-bg-img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
   }
 }
 @import '../../node_modules/bootstrap/scss/bootstrap';
