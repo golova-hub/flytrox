@@ -143,6 +143,7 @@
   font-size: 20px !important;
   font-weight: 400 !important;
   line-height: 1.2 !important;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.10), -1px 3px 6px 0px rgba(0, 0, 0, 0.10), -4px 10px 11px 0px rgba(0, 0, 0, 0.09), -9px 23px 15px 0px rgba(0, 0, 0, 0.05), -16px 40px 17px 0px rgba(0, 0, 0, 0.01), -25px 63px 19px 0px rgba(0, 0, 0, 0.00);
 }
 .btn-primary {
   color: white !important;
@@ -247,6 +248,116 @@ hr {
   }
   .gif {
     width: 130px;
+  }
+}
+/* слайдер */
+.slide-img-main {
+  position: relative;
+  object-fit: cover;
+  object-position: center;
+  img {
+  position: relative;
+    max-width: 100%;
+  }
+}
+h3, .h3 {
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.slider-tabs {
+  .nav-link.slider-tab {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 112%; /* 26.88px */
+    color: $secondary;
+    padding: 0;
+    &.active {
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      color: $black;
+    }
+  }
+}
+.slider-price {
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.card-info-text {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 112%; /* 17.92px */
+}
+.drone-attr-item {
+  padding-left: 16px;
+  margin-left: 16px;
+  border-left: 2px solid $primary;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 22.4px */
+  margin-bottom: 12px;
+  &:first-child {
+    border-left: none;
+    padding-left: 0;
+    margin-left: 0;
+  }
+}
+.btn.btn-ozone {
+  border: 1px solid $ozone-color;
+  color: $ozone-color;
+  &:hover {
+    background-color: $ozone-color;
+    color: white;
+  }
+}
+.splide__track {
+  border-radius: 16px;
+}
+ul.thumbnails {
+  padding: 0;
+  display: flex;
+  .name {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 10px;
+  }
+  .price {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 112%; /* 26.88px */
+  }
+  .card {
+    height: 396px;
+    position: relative;
+    object-fit: cover;
+    overflow: hidden;
+    object-position: top;
+    img {
+      position: absolute;
+      max-width: 100%;
+      z-index: 1;
+    }
+    .card-body {
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      .name {
+        margin-top: auto;
+      }
+    }
   }
 }
 
