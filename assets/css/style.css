@@ -392,6 +392,31 @@ ul.thumbnails .card .card-body .name {
   border-radius: 16px;
 }
 
+.bg-pattern {
+  position: relative;
+  overflow: hidden;
+  object-fit: cover;
+  object-position: center;
+}
+.bg-pattern .bg-img {
+  position: absolute;
+}
+
+.partners-num {
+  border-bottom: 2px solid #FF5C00;
+  padding-bottom: 20px;
+}
+.partners-num img {
+  max-width: 100%;
+  display: block;
+}
+.partners-num .text-white {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 112%; /* 26.88px */
+}
+
 /*!
  * Bootstrap  v5.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2023 The Bootstrap Authors

@@ -401,4 +401,27 @@ ul.thumbnails {
     border-radius: 16px;
   }
 }
+.bg-pattern {
+  position: relative;
+  overflow: hidden;
+  object-fit: cover;
+  object-position: center;
+  .bg-img {
+    position: absolute;
+  }
+}
+.partners-num {
+  border-bottom: 2px solid $primary;
+  padding-bottom: 20px;
+  img {
+    max-width: 100%;
+    display: block;
+  }
+  .text-white {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 112%; /* 26.88px */
+  }
+}
 @import '../../node_modules/bootstrap/scss/bootstrap';
