@@ -295,6 +295,18 @@ h3, .h3 {
   font-style: normal;
   font-weight: 400;
   line-height: 112%; /* 17.92px */
+  //height: 48px;
+  //overflow: hidden;
+  //&.text-show {
+  //  height: 100%;
+  //  transition: all .5s ease-out;
+  //}
+}
+.read-more {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 112%; /* 17.92px */
 }
 .drone-attr-item {
   padding-left: 16px;
@@ -361,4 +373,32 @@ ul.thumbnails {
   }
 }
 
+.hdr-group {
+  padding: 0px 40px;
+}
+.feedback-group {
+  .feedback-ava {
+    height: 45px;
+    width: 45px;
+    max-width: 45px;
+    min-width: 45px;
+    position: relative;
+    object-fit: cover;
+    object-position: center;
+    margin-right: 12px;
+    img {
+      position: relative;
+    }
+  }
+  .feedback-name {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: $secondary;
+  }
+  .feedback-screen {
+    border-radius: 16px;
+  }
+}
 @import '../../node_modules/bootstrap/scss/bootstrap';
