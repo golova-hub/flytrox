@@ -161,8 +161,8 @@
   right: 0;
 }
 .bg-blue .bg-light-gradient {
-  border: 1px solid var(--White, #FFF);
-  background: linear-gradient(133deg, #D9D9D9 0%, rgba(217, 217, 217, 0) 89.92%);
+  border: 1px solid rgba(217, 217, 217, 0.5);
+  background: linear-gradient(133deg, #D9D9D9 -136%, rgba(217, 217, 217, 0) 89.92%);
   mix-blend-mode: soft-light;
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1), -13px 21px 53px 0px rgba(0, 0, 0, 0.1), -51px 82px 97px 0px rgba(0, 0, 0, 0.09), -115px 185px 131px 0px rgba(0, 0, 0, 0.05), -205px 329px 155px 0px rgba(0, 0, 0, 0.01), -321px 513px 169px 0px rgba(0, 0, 0, 0);
 }
@@ -405,16 +405,50 @@ ul.thumbnails .card .card-body .name {
 .partners-num {
   border-bottom: 2px solid #FF5C00;
   padding-bottom: 20px;
+  max-width: 270px;
 }
 .partners-num img {
   max-width: 100%;
   display: block;
 }
-.partners-num .text-white {
+.partners-num p {
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
   line-height: 112%; /* 26.88px */
+}
+
+.military {
+  border-radius: 150px 16px 16px 150px;
+  overflow: hidden;
+  padding: 40px;
+  max-width: 1364px;
+  width: 80vw;
+  float: right;
+  margin-bottom: 200px;
+}
+.military .military-img {
+  max-width: 100%;
+  max-height: 210px;
+}
+
+.drone-bg {
+  border-radius: 16px;
+  position: absolute;
+  right: 0;
+  bottom: 188px;
+  width: 745px;
+  height: 209px;
+  background: #2E2E2E;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1), -8px 8px 24px 0px rgba(0, 0, 0, 0.1), -31px 31px 44px 0px rgba(0, 0, 0, 0.09), -69px 71px 60px 0px rgba(0, 0, 0, 0.05), -123px 126px 71px 0px rgba(0, 0, 0, 0.01), -193px 197px 77px 0px rgba(0, 0, 0, 0);
+}
+
+.partners-drone {
+  position: absolute;
+  max-width: 100%;
+  z-index: 2;
+  right: -22%;
+  bottom: 10%;
 }
 
 /*!
