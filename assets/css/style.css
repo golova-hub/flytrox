@@ -302,11 +302,28 @@ h3, .h3 {
   line-height: normal;
 }
 
-.card-info-text {
+.card-info .card-info-text {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 112%; /* 17.92px */
+  height: 38px;
+  overflow: hidden;
+  position: relative;
+}
+.card-info .card-info-text:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(0deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+}
+.card-info.text-show .card-info-text {
+  height: 100%;
+  transition: all 0.5s ease-out;
 }
 
 .read-more {
