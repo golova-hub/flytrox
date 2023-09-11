@@ -349,6 +349,14 @@ h3, .h3 {
   margin-left: 0;
 }
 
+.cover-bg.bg-gray-dark {
+  background-color: #343434;
+}
+
+#output {
+  transition-timing-function: ease-out;
+}
+
 .btn.btn-ozone {
   border: 1px solid #005BFF;
   color: #005BFF;

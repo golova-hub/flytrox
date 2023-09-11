@@ -58,7 +58,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
         </div>
         <div class="row justify-content-between second-block">
     <div class="col-12 col-lg-6 mb-20">
-        <div class="card cover-bg bg-black">
+        <div class="card cover-bg bg-gray-dark">
             <img class="second-bg-img" src="assets/images/lines.svg">
             <div class="card-body">
                 <p class="hero-txt text-white mb-32 mt-48">Мы популяризируем использование дронов в России.</p>
@@ -73,7 +73,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                 <img src="assets/images/dron-icon.svg">
                 <img src="assets/images/dron-icon.svg">
                 <img src="assets/images/dron-icon.svg">
-                <p class="numbers mb-0">5000</p>
+                <div id="output" class="numbers mb-0 counter" data-target="5000"></div>
                 <p class="hero-txt">продали дронов в этом году</p>
             </div>
         </div>
@@ -1413,7 +1413,57 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
     splide.mount();
 
 
-    // скрыть доп текст
+    // number counter 5000
+    function countTo() {
+        let from = 3000;
+        let to = 5000;
+        let step = to/200;
+        let interval = 10;
+
+        if(from == to){
+            document.querySelector('#output').textContent = from;
+            return;
+        }
+        let counter = setInterval(function(){
+            from += step;
+            document.querySelector('#output').textContent = from;
+
+            if(from == to){
+                clearInterval(counter);
+            }
+
+        }, interval);
+
+    }
+    // let limitBottom = document.documentElement.offsetHeight - window.innerHeight;
+    window.addEventListener("scroll",function(){
+        if(document.documentElement.scrollTop > 300){
+            countTo();
+        }
+
+    })
+
+
+    // countTo();
+
+        // const counters = document.querySelectorAll('.counter');
+        // counters.forEach((counter) => {
+        //   counter.innerText = '0';
+        //   const updateCounter = () => {
+        //       const target = +counter.getAttribute('data-target');
+        //       // const с = +counter.innerText;
+        //       const increment = target/200;
+        //       let c = +counter.innerText;
+        //       if(c > target){
+        //           counter.innerText = `${Math.ceil(c + increment)}`;
+        //           setTimeout(updateCounter, 10);
+        //       }else{
+        //           counter.innerText = target;
+        //       }
+        //   };
+        //   updateCounter();
+        // });
+
 
 
 </script>
