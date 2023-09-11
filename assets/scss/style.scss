@@ -522,7 +522,8 @@ ul.thumbnails {
 }
 .gallery-grid {
   .gallery-first-row {
-    //height: 760px;
+    height: 690px;
+    overflow: hidden;
   }
   .gallery-20 {
     width: 20%;
@@ -544,17 +545,40 @@ ul.thumbnails {
     border-radius: 16px;
     overflow: hidden;
     object-fit: cover;
-    object-position: center;
+    object-position: top;
     width: 100%;
     img {
       display: block;
+      //position: absolute;
+      max-width: 100%;
       width: 100%;
-      height: 100%;
     }
   }
 }
+.gallery-img {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  object-fit: cover;
+  object-position: top;
+  width: 100%;
+  img {
+    display: block;
+    //position: absolute;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+  }
+}
 .gallery-img.flytrox {
+  position: relative;
+  z-index: 0;
   #flytrox-img {
+    //position: absolute;
+    z-index: 1;git
+    top: 0;
+    width: 100%;
+    max-width: 100%;
   }
   #flytrox-logo {
     position: absolute;
