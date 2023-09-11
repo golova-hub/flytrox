@@ -14,6 +14,13 @@
   color: #FF5C00;
 }
 
+body {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 112%; /* 26.88px */
+}
+
 .hero-block {
   position: relative;
   overflow: hidden;
@@ -24,12 +31,12 @@
   font-weight: 700;
   line-height: 1;
   text-transform: uppercase;
-  max-width: 60vw;
+  max-width: 60%;
 }
 .hero-block .hero-bg-img {
   position: absolute;
-  bottom: 0;
-  left: 0;
+  bottom: -3rem;
+  left: -1rem;
   z-index: 0;
 }
 .hero-block .main-banner {
@@ -37,7 +44,7 @@
   right: 0;
   bottom: 0;
 }
-.hero-block .hero-txt {
+.hero-block .body-txt {
   width: 40%;
 }
 .hero-block .card-body {
@@ -63,6 +70,7 @@
 }
 .second-block .socialmedia .card.bg-light {
   height: 143px;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1), -13px 21px 53px 0px rgba(0, 0, 0, 0.1), -51px 82px 97px 0px rgba(0, 0, 0, 0.09), -115px 185px 131px 0px rgba(0, 0, 0, 0.05), -205px 329px 155px 0px rgba(0, 0, 0, 0.01), -321px 513px 169px 0px rgba(0, 0, 0, 0);
 }
 .second-block .socialmedia .card.bg-light .card-body {
   padding: 24px;
@@ -72,7 +80,7 @@
   bottom: 24px;
 }
 
-.accsessories .hero-txt {
+.accsessories .body-txt {
   width: 60%;
 }
 
@@ -82,7 +90,7 @@
   font-weight: 700;
   color: white;
 }
-.accsessories .hero-txt, .bg-blue .hero-txt, .bg-dark .hero-txt {
+.accsessories .body-txt, .bg-blue .body-txt, .bg-dark .body-txt {
   color: white;
 }
 
@@ -93,7 +101,7 @@
   color: white;
 }
 
-.hero-txt {
+.body-txt {
   font-size: 24px;
   font-weight: 400;
   line-height: 1.2;
@@ -122,7 +130,7 @@
   color: white;
 }
 
-.bg-light .hero-txt {
+.bg-light .body-txt {
   color: #0F0F0F;
 }
 
@@ -172,14 +180,14 @@
 .bg-blue .bg-light-gradient .card-body {
   padding: 75px 40px;
 }
-.bg-blue .hero-txt {
+.bg-blue .body-txt {
   width: 80%;
 }
 
 .soccer .card-body {
   padding-top: 250px;
 }
-.soccer .hero-txt {
+.soccer .body-txt {
   width: 100%;
 }
 
@@ -188,7 +196,7 @@
   background-color: #2C2C2C;
   border-radius: 58px;
 }
-.chat .hero-txt p {
+.chat .body-txt p {
   margin-bottom: 0;
 }
 .chat .tail {
@@ -201,20 +209,24 @@
   height: 70px;
 }
 
-.experts {
+.card.experts {
   position: relative;
+  object-fit: cover;
+  overflow: hidden;
 }
-.experts .txt-84 {
+.card.experts img.experts-bg-img {
+  position: absolute;
+  bottom: -50px;
+  width: 100%;
+  z-index: 1;
+}
+.card.experts .txt-84 {
   width: 60%;
 }
-.experts .card-body {
-  padding-top: 9rem;
-}
-.experts .swag {
-  position: absolute;
-  width: 246px;
-  right: 22.5%;
-  top: 9%;
+.card.experts .card-body {
+  padding-top: 130px;
+  padding-bottom: 120px;
+  z-index: 2;
 }
 
 hr {
@@ -225,7 +237,7 @@ hr {
 .why .bg-dark-grey {
   background-color: #2E2E2E !important;
 }
-.why .hero-txt {
+.why .body-txt {
   width: 80%;
 }
 .why .card {
@@ -310,6 +322,14 @@ h3, .h3 {
   height: 38px;
   overflow: hidden;
   position: relative;
+  transition: height 0.5s ease-out;
+}
+.card-info .card-info-text.more {
+  height: 100%;
+  transition: height 0.5s ease-out;
+}
+.card-info .card-info-text.more:after {
+  background: transparent;
 }
 .card-info .card-info-text:after {
   content: "";
@@ -320,10 +340,6 @@ h3, .h3 {
   top: 0;
   left: 0;
   background: linear-gradient(0deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
-}
-.card-info.text-show .card-info-text {
-  height: 100%;
-  transition: all 0.5s ease-out;
 }
 
 .read-more {
