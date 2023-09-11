@@ -42,7 +42,10 @@ body {
 .hero-block .main-banner {
   position: absolute;
   right: 0;
-  bottom: 0;
+  max-width: 100%;
+  animation-name: main-drone;
+  animation-iteration-count: infinite;
+  animation-duration: 6s;
 }
 .hero-block .body-txt {
   width: 40%;
@@ -51,6 +54,17 @@ body {
   z-index: 1;
 }
 
+@keyframes main-drone {
+  0% {
+    bottom: -4%;
+  }
+  50% {
+    bottom: 6%;
+  }
+  100% {
+    bottom: -4%;
+  }
+}
 .numbers {
   font-size: 130px;
   font-weight: 700;
@@ -224,6 +238,34 @@ hr {
   opacity: 1 !important;
 }
 
+.drones-animation {
+  position: relative;
+  object-fit: contain;
+  overflow: hidden;
+  height: 369px;
+}
+.drones-animation #drones {
+  position: absolute;
+  top: 0;
+  display: block;
+  max-width: 100%;
+  height: 100%;
+  animation-name: drones;
+  animation-iteration-count: infinite;
+  animation-duration: 6s;
+}
+
+@keyframes drones {
+  0% {
+    left: 15%;
+  }
+  50% {
+    left: 25%;
+  }
+  100% {
+    left: 15%;
+  }
+}
 .why .body-txt {
   width: 86%;
 }
@@ -588,6 +630,26 @@ footer a {
 }
 footer a:hover {
   color: #FF5C00;
+}
+
+.skillbox {
+  position: relative;
+  overflow: hidden;
+}
+.skillbox .bg-man {
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  bottom: 0;
+  max-width: 100%;
+  width: 48%;
+}
+.skillbox .card-body {
+  z-index: 3;
+}
+
+#skillbox-logo {
+  max-width: 400px;
 }
 
 /*!
@@ -15221,10 +15283,63 @@ textarea.form-control-lg {
   }
 }
 @media (max-width: 1727.98px) {
-  .chat .gif {
+  .hero-block .hero-hdr {
+    max-width: 70%;
+  }
+  .hero-block .main-banner {
+    width: 60%;
+  }
+  .hero-block .hero-bg-img {
+    height: 60%;
+  }
+  .body-txt {
+    font-size: 20px;
+  }
+  .txt-50 {
+    font-size: 40px;
+  }
+  .numbers {
+    font-size: 104px;
+  }
+  .socialmedia .card.bg-light {
+    height: 119px;
+  }
+  .socialmedia .card.bg-light .card-body {
+    padding: 16px;
+  }
+  .socialmedia .card.bg-light .card-body img {
     width: 48px;
-    height: 48px;
-    margin-bottom: 16px;
+    max-height: 32px;
+  }
+  .skillbox .txt-50 {
+    max-width: 70%;
+  }
+  .soccer .card-body {
+    padding-top: 150px;
+  }
+  .txt-84 {
+    font-size: 72px;
+  }
+  .drones-animation {
+    height: 240px;
+  }
+  .why .gif {
+    width: 100px;
+  }
+  #skillbox-logo {
+    max-width: 300px;
+  }
+  .drone-bg {
+    width: 640px;
+    height: 170px;
+    bottom: 90px;
+  }
+  .partners-drone {
+    width: 75%;
+    bottom: 0;
+  }
+  .military {
+    margin-bottom: 100px;
   }
 }
 
