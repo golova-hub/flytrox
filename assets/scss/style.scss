@@ -371,10 +371,10 @@ h3, .h3 {
     height: 38px;
     overflow: hidden;
     position: relative;
-    transition: height .5s ease-out;
+    //transition: height .2s ease;
     &.more {
       height: 100%;
-      transition: height .5s ease-out;
+      //transition: height .2s ease;
       &:after {
         background: transparent;
       }
