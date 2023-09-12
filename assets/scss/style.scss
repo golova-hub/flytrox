@@ -175,6 +175,7 @@ body {
     z-index: 0;
     bottom: 0;
     right: 0;
+    max-width: 100%;
   }
   .bg-light-gradient {
     border: 1px solid rgba(217, 217, 217, 0.50);
@@ -743,7 +744,6 @@ footer {
     margin-bottom: 100px;
   }
 }
-
 @include media-breakpoint-down(xl) {
   .navbar {
     font-size: 18px;
@@ -998,16 +998,78 @@ footer {
     width: 90%;
   }
 }
-
-@media (max-width: 768px)  {
+@media (max-width: 768px) {
+  .socialmedia .card.bg-light {
+    height: 141px;
+  }
+  .socialmedia .card.bg-light .card-body {
+    padding: 12px;
+  }
+  .socialmedia .card.bg-light .card-body img {
+    bottom: 12px;
+    width: 50%;
+    max-height: 44px;
+  }
+  .numbers {
+    font-size: 90px;
+  }
+  .slide-img-main {
+    height: 290px;
+  }
+  .btn.btn-primary, .btn.btn-ozone, .btn.btn-dark {
+    padding: 12px 20px;
+    font-size: 12px;
+  }
+  .slider-tabs .nav-link.slider-tab {
+    font-size: 20px;
+  }
+  .slider-tabs .nav-link.slider-tab.active {
+    font-size: 20px;
+  }
+  .skillbox .bg-man {
+    transform: scale(-1, 1);
+    right: 0;
+    left: initial;
+  }
+  .skillbox .txt-50 {
+    max-width: 61%;
+  }
+  .bg-blue .body-txt {
+    max-width: 65%;
+  }
+  .bg-blue .bg-light-gradient img {
+    max-width: 50%;
+  }
+  .bg-pattern.soccer .bg-img, .card.bg-pattern.soccer .bg-img {
+    opacity: .4;
+  }
+  .why {
+    .card {
+      height: 40vw;
+    }
+    .bg-img {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+  .hdr-group {
+    padding: 0 18px;
+  }
+  #skillbox-logo {
+    max-width: 50%;
+    margin-top: 32px;
+  }
+  .partners-num svg {
+    max-width: 26%;
+  }
+}
+@include media-breakpoint-down(md)  {
 
   .hero-block .hero-hdr {
     max-width: 100%;
     font-size: 40px;
   }
-  .socialmedia .card.bg-light {
-    height: 138px;
-  }
+
   .card-body {
     padding: 12px;
   }
@@ -1045,5 +1107,8 @@ footer {
     .txt-18 {
       font-size: 16px;
     }
+  }
+  .socialmedia .card.bg-light {
+    height: 141px;
   }
 }
