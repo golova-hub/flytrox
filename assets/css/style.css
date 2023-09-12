@@ -436,6 +436,13 @@ ul.thumbnails .name {
   line-height: normal;
   margin-bottom: 10px;
 }
+ul.thumbnails .thumbnail:hover {
+  cursor: pointer;
+  opacity: 0.95;
+}
+ul.thumbnails .thumbnail.is-active .name {
+  color: #9C9797;
+}
 ul.thumbnails .price {
   font-size: 24px;
   font-style: normal;
@@ -505,8 +512,7 @@ ul.thumbnails .card .card-body .name {
 }
 .bg-pattern .bg-img, .card.bg-pattern .bg-img {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: auto;
   z-index: 1;
 }
 .bg-pattern .card-body, .card.bg-pattern .card-body {
@@ -15538,6 +15544,72 @@ textarea.form-control-lg {
   }
   .card-body {
     padding: 18px;
+  }
+  .accsessories .bg-pattern .bg-img, .accsessories .card.bg-pattern .bg-img {
+    height: 100%;
+  }
+  .soccer .bg-img {
+    height: 100%;
+  }
+  .why .gif {
+    width: 60%;
+  }
+  .card.experts .card-body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .txt-84 {
+    font-size: 40px;
+  }
+  .military .military-img {
+    max-height: 130px;
+  }
+  .partners-drone {
+    bottom: -20px;
+  }
+  footer .logo-flytrox {
+    width: 90%;
+  }
+}
+@media (max-width: 767.98px) {
+  .hero-block .hero-hdr {
+    max-width: 100%;
+    font-size: 40px;
+  }
+  .card-body {
+    padding: 12px;
+  }
+  .partners-num p {
+    font-size: 12px;
+    word-wrap: normal;
+  }
+  .military {
+    padding: 12px;
+    margin-bottom: 32px;
+  }
+  .military .military-img {
+    max-height: 100px;
+  }
+  .card.experts img.experts-bg-img {
+    width: auto;
+  }
+  .card.experts .txt-84, .card.experts .body-txt {
+    width: 90%;
+  }
+  .why .icon {
+    width: 20px;
+  }
+  .why .body-txt {
+    font-size: 12px;
+  }
+  .why .bg-pattern .bg-img, .why .card.bg-pattern .bg-img {
+    width: 100%;
+  }
+  .hdr-group {
+    padding: 0px 12px;
+  }
+  footer .contacts .txt-18 {
+    font-size: 16px;
   }
 }
 

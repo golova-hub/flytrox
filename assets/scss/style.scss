@@ -449,6 +449,13 @@ ul.thumbnails {
     line-height: normal;
     margin-bottom: 10px;
   }
+  .thumbnail:hover {
+    cursor: pointer;
+    opacity: .95;
+  }
+  .thumbnail.is-active .name {
+    color: #9C9797;
+  }
   .price {
     font-size: 24px;
     font-style: normal;
