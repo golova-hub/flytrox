@@ -314,10 +314,15 @@ hr {
   position: relative;
   object-fit: cover;
   object-position: center;
+  height: 416px;
+  overflow: hidden;
+  margin-bottom: 32px;
+  text-align: center;
 }
 .slide-img-main img {
   position: relative;
   max-width: 100%;
+  height: 100%;
 }
 
 h3, .h3 {
