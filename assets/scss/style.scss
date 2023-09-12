@@ -463,7 +463,8 @@ ul.thumbnails {
     line-height: 112%; /* 26.88px */
   }
   .card {
-    height: 396px;
+    max-height: 396px;
+    height: 25vw;
     position: relative;
     object-fit: cover;
     overflow: hidden;
@@ -765,7 +766,7 @@ footer {
       font-size: 56px;
     }
     .body-txt {
-      width: 50%;
+      width: 48%;
     }
   }
   .body-txt {
@@ -897,6 +898,20 @@ footer {
   footer a {
     font-size: 16px;
   }
+  .drone-attr-item {
+    font-size: 12px;
+    padding-left: 6px;
+    margin-left: 6px;
+  }
+  .slide-img-main {
+    height: 334px;
+  }
+  ul.thumbnails .name {
+    font-size: 22px;
+  }
+  ul.thumbnails .price {
+    font-size: 20px;
+  }
 }
 @include media-breakpoint-down(lg) {
   .navbar{
@@ -935,6 +950,7 @@ footer {
   .hero-block .hero-hdr {
     font-size: 44px;
   }
+
   .mw-lg-80 {
     max-width: 80%
   }
@@ -982,10 +998,15 @@ footer {
     width: 90%;
   }
 }
-@include media-breakpoint-down(md) {
+
+@media (max-width: 768px)  {
+
   .hero-block .hero-hdr {
     max-width: 100%;
     font-size: 40px;
+  }
+  .socialmedia .card.bg-light {
+    height: 138px;
   }
   .card-body {
     padding: 12px;
