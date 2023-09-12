@@ -8,7 +8,7 @@
   margin-left: 64px;
 }
 .navbar .nav-link {
-  color: white;
+  color: #E8E8E8;
 }
 .navbar .nav-link:hover, .navbar .nav-link:focus {
   color: #FF5C00;
@@ -603,6 +603,7 @@ ul.thumbnails .card .card-body .name {
   max-width: 100%;
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
 .gallery-img.flytrox {
@@ -15348,6 +15349,9 @@ textarea.form-control-lg {
   .navbar .nav-item {
     margin-left: 48px;
   }
+  .navbar .container {
+    width: auto;
+  }
   .hero-block .hero-hdr {
     max-width: 70%;
   }
@@ -15478,6 +15482,57 @@ textarea.form-control-lg {
   }
   footer a {
     font-size: 16px;
+  }
+}
+@media (max-width: 1023.98px) {
+  .navbar .container {
+    width: 100%;
+  }
+  .navbar-toggler-icon {
+    background-image: none;
+    display: block;
+    height: 3px;
+    background-color: #E8E8E8;
+    border-radius: 2px;
+    position: relative;
+  }
+  .navbar-toggler-icon:before, .navbar-toggler-icon:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    border-radius: 2px;
+    background-color: #E8E8E8;
+    left: 0;
+  }
+  .navbar-toggler-icon:before {
+    top: -8px;
+  }
+  .navbar-toggler-icon:after {
+    bottom: -8px;
+  }
+  .navbar-toggler {
+    height: 48px;
+    padding: 0;
+  }
+  .hero-block .hero-hdr {
+    font-size: 44px;
+  }
+  .mw-lg-80 {
+    max-width: 80%;
+  }
+  ul.thumbnails .card {
+    height: 205px;
+  }
+  ul.thumbnails .card .card-body .name {
+    font-size: 20px;
+  }
+  ul.thumbnails .price {
+    font-size: 20px;
+  }
+  .card-body {
+    padding: 18px;
   }
 }
 
