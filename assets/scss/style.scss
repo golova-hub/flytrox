@@ -333,7 +333,7 @@ hr {
   position: relative;
   object-fit: cover;
   object-position: center;
-  height: 416px;
+  max-height: 416px;
   overflow: hidden;
   margin-bottom: 32px;
   text-align: center;
@@ -411,6 +411,7 @@ h3, .h3 {
   line-height: 112%; /* 17.92px */
 
 }
+
 .drone-attr-item {
   padding-left: 16px;
   margin-left: 16px;
@@ -1263,4 +1264,20 @@ footer {
   .bg-pattern.soccer .bg-img, .card.bg-pattern.soccer .bg-img {
     left: -10rem;
   }
+}
+@media (max-width: 375px) {
+  .dron-icon img{
+    width: 35px;
+  }
+}
+@media (max-width: 374px) {
+  .hero-block .hero-hdr {
+    font-size: 36px;
+  }
+  .numbers {
+    font-size: 46px;
+}
+.why .icon {
+  width: 14px;
+}
 }
